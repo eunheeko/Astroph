@@ -7,6 +7,19 @@ base_url = 'http://export.arxiv.org/api/query?';
 cat = 'astro-ph'
 today = date.today()
 
+'''
+field prefix
+    ti	Title
+    au	Author
+    abs	Abstract
+    co	Comment
+    jr	Journal Reference
+    cat	Subject Category
+    rn	Report Number
+    id	Id (use id_list instead)
+    all	All of the above
+'''
+
 #Search Parameters
 search_query = 'cat:%s' % (cat) # search for electron in all fields
 start = 0                     # retreive the first 5 results
@@ -21,7 +34,7 @@ class astroph():
     def set_query(self, query_default = True):
         # write down queries
         if query_default:
-            self.cat = 
+            self.cat = 'astro-ph'
 
         return
 
@@ -38,20 +51,16 @@ class astroph():
 
         return
 
+    def update_keywords():
+        # authors, kehwords, and etc of interests
+        return
+    
+    def query_keywords():
+        # show updated keyword search
+        return
 
 
-'''
-field prefix
-    ti	Title
-    au	Author
-    abs	Abstract
-    co	Comment
-    jr	Journal Reference
-    cat	Subject Category
-    rn	Report Number
-    id	Id (use id_list instead)
-    all	All of the above
-'''
+
 
 
 
